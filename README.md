@@ -10,6 +10,8 @@ npm run dev
 yarn dev
 ```
 
+<a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 Open [http://test.localhost:3000/about](http://test.localhost:3000/about) with your browser to see the result.

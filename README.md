@@ -9,10 +9,34 @@ npm run dev
 # or
 yarn dev
 ```
-Open [http://test.localhost:3000/about](http://test.localhost:3000/about) with your browser to see the result.<br/>
-Open [http://test.localhost:3000/contact](http://test.localhost:3000/contact) with your browser to see the result.
+Note: LOCALLY ONLY WORKS FOR PORT 3000
 
-Open [http://test2.localhost:3000/about](http://test2.localhost:3000/about) with your browser to see the result.<br/>
-Open [http://test2.localhost:3000/contact](http://test2.localhost:3000/contact) with your browser to see the result.
+[http://test.localhost:3000](http://test.localhost:3000)<br/>
+[http://test.localhost:3000/about](http://test.localhost:3000/about)<br/>
+[http://test.localhost:3000/contact](http://test.localhost:3000/contact)
 
-Note: ONLY WORKS FOR PORT 3000
+[http://test2.localhost:3000](http://test.localhost:3000)<br/>
+[http://test2.localhost:3000/about](http://test2.localhost:3000/about)<br/>
+[http://test2.localhost:3000/contact](http://test2.localhost:3000/contact)
+
+[http://everlivesolutions.localhost:3000](http://everlivesolutions.localhost:3000)<br/>
+[http://everlivesolutions.localhost:3000/about](http://everlivesolutions.localhost:3000/about)<br/>
+[http://everlivesolutions.localhost:3000/contact](http://everlivesolutions.localhost:3000/contact)
+
+[http://jonathansarria.localhost:3000](http://jonathansarria.localhost:3000)<br/>
+[http://jonathansarria.localhost:3000/about](http://jonathansarria.localhost:3000/about)<br/>
+[http://jonathansarria.localhost:3000/contact](http://jonathansarria.localhost:3000/contact)
+
+DEPLOYED TO VERCEL
+
+Replace in all of the above URLs localhost:3000 by vercel.app
+
+e.g.
+
+[https://multi-tenant-sample.vercel.app/](https://multi-tenant-sample.vercel.app/)<br/>
+
+Also, these two domains are pointing to the same code base
+
+[https://www.jonathansarria.com](https://www.jonathansarria.com)<br/>
+[https://www.everlivesolutions.com](https://www.everlivesolutions.com)<br/>
+

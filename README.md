@@ -29,7 +29,7 @@ Note: LOCALLY ONLY WORKS FOR PORT 3000
 
 DEPLOYED TO VERCEL
 
-Replace in all of the above URLs localhost:3000 by vercel.app
+Replace in all of the above URLs localhost:3000 by vercel.app. Note that if the domain https://test2.vercel.app/ or https://test.vercel.app/ or any other domain already exists in Vercel it will show the original one and ignore ours
 
 e.g.
 

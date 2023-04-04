@@ -2,12 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First install the app and then run the development server:
 
 ```bash
+npm i
 npm run dev
-# or
-yarn dev
 ```
 Note: LOCALLY ONLY WORKS FOR PORT 3000
 

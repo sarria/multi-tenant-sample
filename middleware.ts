@@ -42,6 +42,7 @@ export default async function middleware(req: NextRequest) {
 
   // HERE PROBABLY USE REGEX TO MAKE IT BETTER :-)
   const currentHost = hostname
+    .replace(`www.`, "")
     .replace(`.com`, "")
     .replace(`.localhost:3000`, "")
     .replace(`.vercel.app`, "");
@@ -62,12 +63,10 @@ export default async function middleware(req: NextRequest) {
 
   // rewrite root application to `/home` folder
   if (hostname === "localhost:3000" || hostname === "platformize.vercel.app") {
-    console.log("aqui home:: ", `/home/${path}`)
     return NextResponse.rewrite(new URL(`/home}`, req.url));
   }
 
   // rewrite everything else to `/_sites/[site] dynamic route
-  console.log("dynamic route:: ", `/_sites/${currentHost}${path}`)
   return NextResponse.rewrite(
     new URL(`/_sites/${currentHost}${path}`, req.url)
   );

@@ -55,11 +55,12 @@ export default async function middleware(req: NextRequest) {
 
   // rewrite root application to `/home` folder
   if (hostname === "localhost:3000" || hostname === "platformize.vercel.app") {
-    console.log("aqui home")
-    return NextResponse.rewrite(new URL(`/home/${path}`, req.url));
+    console.log("aqui home:: ", `/home/${path}`)
+    return NextResponse.rewrite(new URL(`/home}`, req.url));
   }
 
   // rewrite everything else to `/_sites/[site] dynamic route
+  console.log("dynamic route:: ", `/_sites/${currentHost}${path}`)
   return NextResponse.rewrite(
     new URL(`/_sites/${currentHost}${path}`, req.url)
   );

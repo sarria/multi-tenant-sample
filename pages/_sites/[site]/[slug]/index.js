@@ -23,20 +23,9 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps = async (context) => {
-	const data = [ // REPLACE THIS WITH DATABASE CALL
-	  	{ 
-			domain: "test", 
-	  		about: "This is the about page for test",
-			contact: "This is the contact page for test" 
-		},
-	  	{ 	domain: "test2", 
-		  	about: "This is the about content for test2",
-			contact: "This is the contact content for test2"
-		},
-	];
+	// REPLACE THIS WITH DATABASE CALL
+	const data = JSON.parse(process.env.SITES_DATA);
 
-	console.log("context:: ", context)
-  
 	const project = data.find((p) => p.domain === context.params.site);
   
 	if (!project) {
@@ -54,6 +43,5 @@ export const getStaticProps = async (context) => {
 };
 
 export default function Index({ project, params }) {
-	console.log("params:: ", params);
   	return <h1>Page:: {project.domain}:{project.site} - {project[params.slug]} - {params.slug}</h1>;
 }

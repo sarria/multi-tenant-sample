@@ -21,11 +21,7 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps = async (context) => {
-	const data = [
-	  { domain: "test", data: "My first test project" },
-	  { domain: "test2", data: "My second test project" },
-	  { domain: "multi-tenant-sample", data: "Multi Tenant Sample From Vercel" },
-	];
+	const data = JSON.parse(process.env.SITES_DATA);
   
 	const project = data.find((p) => p.domain === context.params.site);
   

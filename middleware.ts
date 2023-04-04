@@ -40,7 +40,11 @@ export default async function middleware(req: NextRequest) {
   //         .replace(`.platformize.vercel.app`, "")
   //     : hostname.replace(`.localhost:3000`, "");
 
-  const currentHost = hostname.replace(`.localhost:3000`, "").replace(`.vercel.app`, "");
+  // HERE PROBABLY USE REGEX TO MAKE IT BETTER :-)
+  const currentHost = hostname
+    .replace(`.com`, "")
+    .replace(`.localhost:3000`, "")
+    .replace(`.vercel.app`, "");
 
   // rewrites for app pages
   if (currentHost === "app") {

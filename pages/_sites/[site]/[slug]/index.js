@@ -55,5 +55,5 @@ export const getStaticProps = async (context) => {
 
 export default function Index({ project, params }) {
 	console.log("params:: ", params);
-  	return <h1>Page:: {project.domain} - {project[params.slug]} - {params.slug}</h1>;
+  	return <h1>Page:: {project.domain}:{project.site} - {project[params.slug]} - {params.slug}</h1>;
 }

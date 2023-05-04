@@ -45,6 +45,7 @@ export default async function middleware(req: NextRequest) {
     .replace(`www.`, "")
     .replace(`.com`, "")
     .replace(`.localhost:3000`, "")
+    .replace(`tsi-`, "")
     .replace(`.vercel.app`, "");
 
   // rewrites for app pages
